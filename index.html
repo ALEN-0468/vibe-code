@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KlenHands | Support, Care, and Growth for Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="#home" class="logo">KlenHands</a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#causes">Causes</a></li>
+          <li><a href="#donation">Donate</a></li>
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container reveal">
+          <h1>KlenHands</h1>
+          <p>Support, Care, and Growth for Everyone</p>
+          <a href="#donation" class="btn btn-primary">Donate Now</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section about reveal" id="about">
+        <div class="container section-grid">
+          <div>
+            <p class="section-label">About Us</p>
+            <h2>Building stronger lives with support and compassion</h2>
+          </div>
+          <div>
+            <p>
+              KlenHands is dedicated to helping vulnerable people through counseling,
+              community-focused programs, and resources that create long-term
+              opportunities. Our mission is to provide meaningful support where it is
+              needed most.
+            </p>
+            <p>
+              We envision inclusive communities where everyone has access to care,
+              education, and pathways for growth. Through partnerships and volunteers,
+              we uplift individuals and families toward a healthier future.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section causes reveal" id="causes">
+        <div class="container">
+          <p class="section-label">Our Causes</p>
+          <h2>Where your donation creates impact</h2>
+          <div class="card-grid">
+            <article class="cause-card">
+              <img
+                src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?auto=format&fit=crop&w=900&q=80"
+                alt="Counselor and community member talking"
+              />
+              <div class="card-content">
+                <h3>Mental Health Support</h3>
+                <p>
+                  We provide counseling sessions and emotional support programs for
+                  people facing trauma, stress, and uncertainty.
+                </p>
+                <a href="#donation" class="btn btn-secondary">Donate</a>
+              </div>
+            </article>
+
+            <article class="cause-card">
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
+                alt="Children learning in classroom"
+              />
+              <div class="card-content">
+                <h3>Education for Children</h3>
+                <p>
+                  Your support helps children access school supplies, learning support,
+                  and safe educational environments.
+                </p>
+                <a href="#donation" class="btn btn-secondary">Donate</a>
+              </div>
+            </article>
+
+            <article class="cause-card">
+              <img
+                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=900&q=80"
+                alt="Volunteers working on a local community project"
+              />
+              <div class="card-content">
+                <h3>Community Development</h3>
+                <p>
+                  We launch projects that improve local infrastructure, access to care,
+                  and sustainable growth for underserved areas.
+                </p>
+                <a href="#donation" class="btn btn-secondary">Donate</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section donation reveal" id="donation">
+        <div class="container donation-layout">
+          <div>
+            <p class="section-label">Donation</p>
+            <h2>Give hope with every contribution</h2>
+            <p>
+              Select an amount to support KlenHands programs. Every rupee helps us
+              expand care, counseling, and growth opportunities.
+            </p>
+            <div class="amount-options" role="group" aria-label="Donation amounts">
+              <button type="button" class="amount-btn" data-amount="100">₹100</button>
+              <button type="button" class="amount-btn" data-amount="500">₹500</button>
+              <button type="button" class="amount-btn" data-amount="1000">₹1000</button>
+              <button type="button" class="amount-btn" data-amount="custom">Custom</button>
+            </div>
+          </div>
+
+          <form class="donation-form" id="donationForm">
+            <label for="donorName">Name</label>
+            <input type="text" id="donorName" name="name" placeholder="Your full name" required />
+
+            <label for="donorEmail">Email</label>
+            <input type="email" id="donorEmail" name="email" placeholder="you@example.com" required />
+
+            <label for="donationAmount">Donation Amount (₹)</label>
+            <input
+              type="number"
+              id="donationAmount"
+              name="amount"
+              min="1"
+              placeholder="Enter amount"
+              required
+            />
+
+            <button type="submit" class="btn btn-primary">Donate Now</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section impact reveal" id="impact">
+        <div class="container">
+          <p class="section-label">Our Impact</p>
+          <h2>Together, we make a measurable difference</h2>
+          <div class="impact-grid">
+            <div class="impact-item">
+              <h3>12,500+</h3>
+              <p>People helped</p>
+            </div>
+            <div class="impact-item">
+              <h3>850+</h3>
+              <p>Volunteers</p>
+            </div>
+            <div class="impact-item">
+              <h3>220+</h3>
+              <p>Projects completed</p>
+            </div>
+            <div class="impact-item">
+              <h3>₹1.8 Cr+</h3>
+              <p>Funds raised</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section volunteer reveal" id="volunteer">
+        <div class="container volunteer-content">
+          <div>
+            <p class="section-label">Volunteer</p>
+            <h2>Be the reason someone smiles today</h2>
+            <p>
+              Join our volunteer network and help us reach more people with care,
+              guidance, and essential services.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Join as Volunteer</a>
+        </div>
+      </section>
+
+      <section class="section contact reveal" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="section-label">Contact Us</p>
+            <h2>Let's connect and make change together</h2>
+            <ul class="contact-info">
+              <li><i class="fa-solid fa-envelope"></i> hello@klenhands.org</li>
+              <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+              <li><i class="fa-solid fa-location-dot"></i> Bengaluru, India</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required />
+
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" placeholder="How can we help?" required></textarea>
+
+            <button type="submit" class="btn btn-secondary">Send Message</button>
+            <p class="form-message" id="contactMessageStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> KlenHands. All rights reserved.</p>
+        <ul class="quick-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#causes">Causes</a></li>
+          <li><a href="#donation">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
